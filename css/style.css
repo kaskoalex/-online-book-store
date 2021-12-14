@@ -4,8 +4,7 @@
 }
 
 body {
-  font-family: "Mulish", sans-serif;
-  background-color: #E5E5E5;
+  background-color: #ffff;
 }
 
 .container {
@@ -363,5 +362,63 @@ template {
 .logo {
   width: 90px;
   height: 28px;
+  margin-top: 5px;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+.top__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  max-height: 100px;
+}
+
+.top__row-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.top__row-links-1a {
+  margin-right: 22px;
+}
+
+.top__row-links-1b {
+  margin-right: 22px;
+}
+
+.top__row-links-1c {
+  margin-right: 63px;
+}
+
+.top__row-links__text {
+  color: #1565D8;
+  font-weight: bold;
+}
+
+.top__row-links__button {
+  width: 148px;
+  height: 48px;
+  border-color: #1565D8;
+  border-radius: 8px;
+  border-width: 2px;
+  padding: 13px 28px;
+  background: #ffff;
 }
 /*# sourceMappingURL=style.css.map */
