@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -61,7 +62,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -205,9 +207,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -215,9 +217,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -226,9 +228,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -246,7 +248,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -278,9 +281,10 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -289,8 +293,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -298,7 +302,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -308,7 +312,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -365,35 +369,53 @@ template {
   margin-top: 10px;
   margin-bottom: 97px;
 }
+
 .top__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: auto;
   max-height: 100px;
 }
+
 .top__row-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Open Sans, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
 }
+
 .top__row-links-1a {
   margin-right: 22px;
 }
+
 .top__row-links-1b {
   margin-right: 24px;
 }
+
 .top__row-links-1c {
   margin-right: 63px;
 }
+
 .top__row-links__text {
   color: #1565D8;
   font-weight: bold;
 }
+
 .top__row-links__button {
   width: 148px;
   height: 48px;
@@ -405,14 +427,26 @@ template {
   background: #ffff;
   cursor: pointer;
 }
+
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .header__design {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 585px;
   max-height: 478px;
   font-family: Roboto Condensed, sans-serif;
@@ -422,12 +456,15 @@ template {
   margin-top: 31px;
   margin-left: 3px;
 }
+
 .header__design-text {
   color: #FAAD13;
   margin-top: 5px;
   padding-top: 5px;
   padding-bottom: 0;
+  letter-spacing: 0.2px;
 }
+
 .header__design-psy-text {
   color: #183B56;
   max-width: 443px;
@@ -435,29 +472,58 @@ template {
   padding-bottom: 5px;
   margin-top: 2px;
   margin-bottom: 2px;
+  letter-spacing: 0.2px;
 }
+
 .header__bookjanga {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .header__bookjanga-header {
   font-family: Roboto, sans serif;
   font-weight: 500px;
   font-size: 20px;
   line-height: 24px;
+  letter-spacing: 0.2px;
   color: #183B56;
-  margin-top: 5px;
+  margin-top: 22px;
+  height: 25px;
 }
+
 .header__bookjanga-text {
   font-family: Open Sans, sans serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   color: #5A7184;
+  margin-top: 34px;
 }
+
 .header__button {
-  width: 209px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 470px;
   height: 58px;
+  margin-top: 39px;
+}
+
+.header__button-by {
+  background-color: #1565D8;
+  color: #ffff;
   border-radius: 8px;
+  width: 44.5%;
   font-family: Open Sans, sans serif;
   font-weight: 700;
   line-height: 22px;
@@ -466,17 +532,30 @@ template {
   border-width: 2px;
   border-color: #1565D8;
 }
-.header__button-by {
-  background-color: #1565D8;
-  color: #ffff;
-}
+
 .header__button-red {
   background-color: none;
   color: #1565D8;
+  border-radius: 8px;
+  width: 209px;
+  font-family: Open Sans, sans serif;
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 18px;
+  cursor: pointer;
+  border-width: 2px;
+  border-color: #1565D8;
+  width: 50%;
 }
+
 .header__psybook {
   background-color: #B3BAC5;
 }
+
 .header__psybook-bookpsyimage {
   margin: 100px 118px 80px;
-}/*# sourceMappingURL=style.css.map */
+  z-index: 99;
+  -webkit-box-shadow: 5px 5px 10px 10px grey, 5px 5px 10px 10px #B3BAC5;
+          box-shadow: 5px 5px 10px 10px grey, 5px 5px 10px 10px #B3BAC5;
+}
+/*# sourceMappingURL=style.css.map */
