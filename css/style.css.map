@@ -8,6 +8,7 @@
         "../sass/_normalize.scss",
         "../sass/blocks/_top.sass",
         "../sass/blocks/_header.sass",
+        "../sass/blocks/_bookstore.sass",
         "../sass/blocks/_breadcrumb.sass",
         "../sass/_media.sass"
     ],
